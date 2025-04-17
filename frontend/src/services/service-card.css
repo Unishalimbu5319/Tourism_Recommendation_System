@@ -1,0 +1,60 @@
+/* Service Item Styling */
+.service__item {
+    padding: 1.5rem;
+    border-bottom: 2px solid rgba(40, 167, 69, 0.5);  /* Green Border */
+    border-right: 2px solid rgba(40, 167, 69, 0.5);
+    border-radius: 0.75rem;
+    background: #f8fff4;  /* Light Greenish Background */
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.service__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.3);
+}
+
+/* Service Image (Icon Container) */
+.service__img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;  /* Fixed Typo: 'centre' → 'center' */
+    justify-content: center;
+    border-radius: 50%;
+    background: #28a745;  /* Solid Green */
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    line-height: 60px;
+    box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icon */
+.service__img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .service__item {
+        padding: 1rem;
+    }
+
+    .service__img {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .service__item{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .service__item{
+        font-size: .9rem;
+        color: var(--text-color)
+    }
+}

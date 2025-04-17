@@ -1,0 +1,145 @@
+/* Destination Image */
+.destination__img img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px 8px 0 0;
+}
+
+.destination__img {
+  position: relative;
+}
+
+/* Featured Badge */
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--primary-color); /* Use your primary color variable */
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* Card Top Section (Location and Rating) */
+.card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.destination__location,
+.destination__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.destination__location i,
+.destination__rating i {
+  font-size: 1rem;
+  color: var(--heading-color);
+}
+
+.destination__rating {
+  color: var(--text-color);
+}
+
+/* Destination Title */
+.destination__title {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  cursor: pointer;
+}
+
+.destination__title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.destination__title a:hover {
+  color: var(--primary-color);
+}
+
+/* Card Bottom Section (Price and Booking Button) */
+.card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card__bottom h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.booking__btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking__btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.booking__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .destination__img img {
+    height: 150px; /* Reduce image height for smaller screens */
+  }
+
+  .destination__title {
+    font-size: 1rem;
+  }
+
+  .card__bottom h5 {
+    font-size: 1rem;
+  }
+
+  .booking__btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination__img img {
+    height: 120px; /* Further reduce image height for mobile */
+  }
+
+  .destination__title {
+    font-size: 0.9rem;
+  }
+
+  .card__bottom h5 {
+    font-size: 0.9rem;
+  }
+
+  .booking__btn {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

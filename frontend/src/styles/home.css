@@ -1,0 +1,234 @@
+/* Hero Subtitle Styling */
+.hero__subtitle {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.hero__subtitle img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 1rem;
+}
+
+/* Hero Content Styling */
+.hero__content {
+    padding-top: 4rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero__content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 3rem 0 2rem 0;
+    color: var(--heading-color);
+    line-height: 1.2;
+}
+
+.hero__content h1 .highlight {
+    color: var(--secondary-color);
+}
+
+.hero__content p {
+    font-size: 2rem;
+    color: var(--text-color);
+    line-height: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Image and Video Styling */
+.hero__img-box {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.hero__img-box img,
+.hero__img-box video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 3px solid var(--secondary-color);
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hero__img-box img:hover,
+.hero__img-box video:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero__content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero__content p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero__content h1 {
+        font-size: 3rem;
+    }
+
+    .hero__content p {
+        font-size: 1.6rem;
+    }
+
+    .hero__img-box {
+        padding-top: 1rem;
+    }
+
+    .hero__img-box img,
+    .hero__img-box video {
+        border-radius: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero__content p {
+        font-size: 1.5rem;
+    }
+
+    .hero__img-box img,
+    .hero__img-box video {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero__content h1 {
+        font-size: 2rem;
+    }
+
+    .hero__content p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .hero__img-box img,
+    .hero__img-box video {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    /* Services Subtitle Styling */
+    .services__subtitle {
+        font-size: 2rem;
+    }
+
+    .services__title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Services Subtitle Styling */
+.services__subtitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: linear-gradient(90deg, #ee6e6e, #ff9966);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #ee6e6e; /* Fallback color */
+}
+
+.services__subtitle::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ee6e6e;
+    margin-top: 5px;
+}
+
+/* Services Title Styling */
+.services__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.featured__destination-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.experience__content h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.experience__content {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.counrter__wrapper {
+    margin-top: 2.5rem;
+}
+
+.counter__box span {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.counter__box h6 {
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+    color: var(--text-color);
+}
+
+.experience__img img {
+    width: 90%;
+}
+
+.gallery__title {
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+.masonry__img {
+    transition: 0.3s;
+}
+
+.masonry__img:hover {
+    transform: scale(1.1);
+}
+
+.testimonial__title {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}

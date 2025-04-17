@@ -1,0 +1,44 @@
+.common__section {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('../assets/images/destination.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .common__section h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .common__section {
+      height: 250px;
+      padding: 0.5rem;
+      background-position: center top;
+    }
+  
+    .common__section h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .common__section {
+      height: 200px;
+      padding: 0.5rem;
+      background-position: center top;
+    }
+  
+    .common__section h1 {
+      font-size: 2rem;
+    }
+  }
+  
